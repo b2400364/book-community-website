@@ -26,6 +26,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+    /* bookreviews.html */
+
+    document.addEventListener("DOMContentLoaded", function(){
+
+    const reviewForm = document.getElementById("reviewForm");
+
+    reviewForm.addEventListener("submit", function(event){
+
+    const name = document.getElementById("name");
+    const comment = document.getElementById("comment");
+
+    if(!name.value.trim() || !comment.value.trim()){
+
+    alert("Please fill in all fields before submitting your review.");
+    event.preventDefault();
+
+    }
+
+    });
+
+});
+
 
     /* Prevent empty submission */
 
